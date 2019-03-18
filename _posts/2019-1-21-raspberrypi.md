@@ -41,7 +41,9 @@ redirect_from:
 
 ## 无线连接
 
-<div align=center>
+开启VNC SSH GPIO
+
+<!-- <div align=center>
 <hr>
 <img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190201101022.png" alt="" width=50% height=50% align=center>
 
@@ -49,7 +51,11 @@ redirect_from:
 <img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190201101201.png" alt="" width=50% height=50% align=center>
 
 <hr>
-</div>
+</div> -->
+
+![配置1](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190201101022.png)
+
+![配置2](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190201101201.png)
 
 ### putty
 
@@ -57,11 +63,15 @@ redirect_from:
 
 登录路由器管理界面查询树莓派的ip地址
 
-<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122084934.png" alt="" width=50% height=50% align=center>
+<!-- <img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122084934.png" alt="" width=50% height=50% align=center> -->
+
+![ip](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122084934.png)
 
 服务器下载并安装putty 输入上图中的IP 开始连接默认用户名 pi  密码  respberry
+<!-- 
+<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122090321.png" alt="" width=50% height=50% align=center> -->
 
-<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122090321.png" alt="" width=50% height=50% align=center>
+![登录](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122090321.png)
 
 ### VNC Viewer
 
@@ -73,13 +83,17 @@ putty登录后在终端输入 `sudo raspi-config`
 
 服务器下载并安装VNC Viewer
 
-<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122090900.png" alt="" width=50% height=50% align=center>
+<!-- <img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122090900.png" alt="" width=50% height=50% align=center> -->
+
+![VNC](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122090900.png)
 
 ### IP与MAC地址绑定
 
 登录路由器管理界面后，在高级设置中
+<!-- 
+<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122105919.png" alt="" width=50% height=50% align=center> -->
 
-<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122105919.png" alt="" width=50% height=50% align=center>
+![绑定](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122105919.png)
 
 添加IP与MAC地址绑定
 
@@ -208,7 +222,9 @@ logout :退出 注销
 
 > LINUX系统目录结构图
 
-<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122122449.png" alt="" width=50% height=50% align=center>
+<!-- <img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122122449.png" alt="" width=50% height=50% align=center> -->
+
+![目录](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122122449.png)
 
 #### 基本命令
 
@@ -350,14 +366,13 @@ GPIO.remove_event_detect(channel)
 
 电阻：4.7--10KΩ
 
-<div align=center>
-
-<hr>
-<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/5.png" alt="" width=50% height=50% align=center>
 接线原理图
-<hr>
-<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/CB270D99CBC55EDECA8609F091E31B56.png" alt="" width=50% height=50% align=center>
+
+![接线原理图](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/5.png)
+
 接线实物图
+
+![接线实物图](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/CB270D99CBC55EDECA8609F091E31B56.png)
 
 ##### 2.收集传感器的信息
 
@@ -408,12 +423,16 @@ sudo nano /etc/caddy/Caddyfile
 }
 ```
 
-<div align=center>
+<!-- <div align=center>
 <hr>
 <img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190213095626.png" alt="" width=50% height=50% align=left>
 2019-02-12 DHT11温湿度监视图
 <hr>
-</div>
+</div> -->
+
+2019-02-12 DHT11温湿度监视图
+
+![DHT11温湿度监视图](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190213095626.png)
 
 #### 第二个传感器
 
