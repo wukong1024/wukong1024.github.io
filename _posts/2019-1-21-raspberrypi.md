@@ -43,16 +43,6 @@ redirect_from:
 
 开启VNC SSH GPIO
 
-<!-- <div align=center>
-<hr>
-<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190201101022.png" alt="" width=50% height=50% align=center>
-
-<div></div>
-<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190201101201.png" alt="" width=50% height=50% align=center>
-
-<hr>
-</div> -->
-
 ![配置1](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190201101022.png)
 
 ![配置2](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190201101201.png)
@@ -63,13 +53,9 @@ redirect_from:
 
 登录路由器管理界面查询树莓派的ip地址
 
-<!-- <img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122084934.png" alt="" width=50% height=50% align=center> -->
-
 ![ip](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122084934.png)
 
 服务器下载并安装putty 输入上图中的IP 开始连接默认用户名 pi  密码  respberry
-<!-- 
-<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122090321.png" alt="" width=50% height=50% align=center> -->
 
 ![登录](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122090321.png)
 
@@ -83,15 +69,11 @@ putty登录后在终端输入 `sudo raspi-config`
 
 服务器下载并安装VNC Viewer
 
-<!-- <img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122090900.png" alt="" width=50% height=50% align=center> -->
-
 ![VNC](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122090900.png)
 
 ### IP与MAC地址绑定
 
 登录路由器管理界面后，在高级设置中
-<!-- 
-<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122105919.png" alt="" width=50% height=50% align=center> -->
 
 ![绑定](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122105919.png)
 
@@ -221,8 +203,6 @@ logout :退出 注销
 这个目录是驻留在系统内存中的虚拟（psuedo，伪）文件系统，其中保存的都是文本格式的系统内核和进程信息。
 
 > LINUX系统目录结构图
-
-<!-- <img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122122449.png" alt="" width=50% height=50% align=center> -->
 
 ![目录](https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190122122449.png)
 
@@ -422,13 +402,6 @@ sudo nano /etc/caddy/Caddyfile
     gzip
 }
 ```
-
-<!-- <div align=center>
-<hr>
-<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190213095626.png" alt="" width=50% height=50% align=left>
-2019-02-12 DHT11温湿度监视图
-<hr>
-</div> -->
 
 2019-02-12 DHT11温湿度监视图
 
