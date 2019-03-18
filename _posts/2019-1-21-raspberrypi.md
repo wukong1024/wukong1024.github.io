@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Raspberry Raspberry PIPI"
+title: "Raspberry PI"
 description: "Raspberry PI"
 categories: [hardware]
 tags: [learn, Raspberry PI, system]
@@ -41,9 +41,15 @@ redirect_from:
 
 ## 无线连接
 
-<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190201101022.png" alt="" width=50% height=50% align=left>
+<div align=center>
+<hr>
+<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190201101022.png" alt="" width=50% height=50% align=center>
 
-<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190201101201.png" alt="" width=50% height=50% align=right>
+<div></div>
+<img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/20190201101201.png" alt="" width=50% height=50% align=center>
+
+<hr>
+</div>
 
 ### putty
 
@@ -61,7 +67,7 @@ redirect_from:
 
 putty登录后在终端输入 `sudo raspi-config`
 
-选择 5.INterfacing Options
+选择 5.INterfacing Options  
 
 再选择 P3 VNC
 
@@ -80,6 +86,16 @@ putty登录后在终端输入 `sudo raspi-config`
 更改VNC分辨率`vncserver -geometry 1200x1366`
 
 更改后用IP+端口号登陆
+
+### 更换源
+
+sudo nano /etc/apt/sources.list
+
+注释第一行 增加 `deb https://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ stretch main contrib non-free rpi`
+
+同步更新源 `sudo apt-get update`
+
+升级软件包 `sudo apt-get upgrade`
 
 ## 学习笔记
 
@@ -204,7 +220,7 @@ logout :退出 注销
 | ls + -l              | List files              | 列出目录下的文件        |
 | mkdir                | Make directory          | 建立文件夹              |
 | rmdir                | Remove directory        | 删除文件夹              |
-| cat                  | Concatenate             | 串联？查看文件 合并文件 | s |
+| cat                  | Concatenate             | 串联？查看文件 合并文件 |
 | touch                | touch                   | 新建文件                |
 | rm                   | remove                  | 删除指定文件            |
 | clear                | clear                   | 清屏                    |
@@ -319,7 +335,6 @@ GPIO.remove_event_detect(channel)
 1.polling轮询 循环定时检查输入值
 2.interruots中断   边缘检测  检测临界值 falling edge rising edge
 """
-
 ```
 
 #### 18B20温度传感器
@@ -341,10 +356,8 @@ GPIO.remove_event_detect(channel)
 <img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/5.png" alt="" width=50% height=50% align=center>
 接线原理图
 <hr>
-
 <img src="https://wu-kong.oss-cn-beijing.aliyuncs.com/img/CB270D99CBC55EDECA8609F091E31B56.png" alt="" width=50% height=50% align=center>
 接线实物图
-</div>
 
 ##### 2.收集传感器的信息
 
@@ -401,3 +414,25 @@ sudo nano /etc/caddy/Caddyfile
 2019-02-12 DHT11温湿度监视图
 <hr>
 </div>
+
+#### 第二个传感器
+
+### 连接阿里云平台
+
+在阿里物联网平台 添加产品树莓派 增加设备 SCADA
+
+在开发板上安装nodejs 和 npm
+
+使用官方工具包
+
+### 配置python SDK
+
+更改 默认python为python3 `sudo rm -rf /usr/bin/python  sudo ln -s /usr/bin/python3  /usr/bin/python`
+
+[教程](https://help.aliyun.com/document_detail/98292.html?spm=a2c4g.11186623.6.619.418471bc5dZy7v)
+
+不能正常升级时 [教程](http://blog.lxx1.com/3214)
+
+尝试三天后被迫放弃 官方SDK太烂 原以为我水平差看不懂 原来大家都看不懂...
+
+还在公测阶段 选择方案3 socketio
