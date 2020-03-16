@@ -25,7 +25,7 @@ url: # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: # the subpath of your site, e.g. /blog
 title: 悟空
 description: "黄金白璧买歌笑，一醉累月轻王侯。"
-keywords: 'jekyll,theme,gem-based,blog'
+keywords: '悟空,童猛,博客,blog,wukong'
 author:
   name:
   job_title:
